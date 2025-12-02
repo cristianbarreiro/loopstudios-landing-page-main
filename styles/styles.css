@@ -332,14 +332,23 @@ footer {
 }
 
 .social-links a {
-    font-size: 1.8em;
-    color: var(--white);
-    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-links a img {
+    width: 24px;
+    height: 24px;
+    display: block;
+    filter: brightness(0) invert(1);
 }
 
 .social-links a:hover {
     transform: translateY(-3px);
-    color: hsl(0, 0%, 70%);
+}
+
+.social-links a:hover img {
+    filter: brightness(0) invert(0.7);
 }
 
 .social-links a:not(:last-child) {
