@@ -277,6 +277,7 @@ nav ul li:hover::after {
     color: var(--white);
     z-index: 5;
     transition: color 0.3s ease, text-shadow 0.3s ease;
+    white-space: nowrap;
 }
 
 .product-card:hover h3 {
