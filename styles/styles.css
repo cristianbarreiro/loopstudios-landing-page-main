@@ -38,6 +38,17 @@ a {
     color: var(--white);
 }
 
+a:focus-visible {
+    outline: 2px solid var(--white);
+    outline-offset: 4px;
+}
+
+button:focus-visible,
+[role="button"]:focus-visible {
+    outline: 2px solid var(--white);
+    outline-offset: 4px;
+}
+
 h1,
 h2,
 h3 {
@@ -128,6 +139,16 @@ nav ul li:hover::after {
     display: none;
 }
 
+.nav-toggler:focus-visible {
+    outline: 2px solid var(--white);
+    outline-offset: 4px;
+}
+
+#close-btn:focus-visible {
+    outline: 2px solid var(--white);
+    outline-offset: 4px;
+}
+
 
 /* 
  * banner style
@@ -210,14 +231,20 @@ nav ul li:hover::after {
     height: 450px;
     cursor: pointer;
     overflow: hidden;
-    outline: 3px solid transparent;
-    outline-offset: -3px;
+    outline: 4px solid transparent;
+    outline-offset: -4px;
     transition: outline-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product-card.selected {
     outline-color: var(--white);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), inset 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.product-card:focus-visible {
+    outline: 4px solid var(--white);
+    outline-offset: -4px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), inset 0 0 15px rgba(255, 255, 255, 0.3);
 }
 
 .product-card img {
