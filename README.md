@@ -24,7 +24,10 @@ Users should be able to:
 
 ### Screenshot
 
-![Loopstudios Landing Page Preview](./preview.jpg)
+
+
+
+![Design preview for the Loopstudios landing page coding challenge](preview.jpg)
 
 ### Links
 
